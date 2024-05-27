@@ -1,0 +1,14 @@
+name: First workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: echo "Hello World!!!"
+      - name: Second Step
+        run: |
+          echo "Done - Bye!!"
+          ls -ltr
+          pwd
+
